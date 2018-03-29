@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Data</title>
+		<style>
+		</style>
+		<script>
+		function init()
+		{
+			numberOfPeople = 844;
+			guess = 0;
+			attemps = 0;
+			revealAnswer = document.getElementById("answer");
+			revealAnswer.style.display = "none";
+			status = 0;
+		}
+		
+		function addGuess(num)
+		{
+			if (status == 1)
+			{
+				return;
+			}
+			
+			guess = guess + num;
+			yourguess.innerHTML = guess;
+		}
+		function addAttemp()
+		{
+			attemps++;
+		}
+		
+		function checkGuess()
+		{
+			addAttemp();
+			if (guess == numberOfPeople || attemps == 5)
+			{
+				display();
+			}
+			else
+			{
+				Title.innerHTML = "Wrong guess, try again.";
+				guess = 0;
+				yourguess.innerHTML = guess;
+			}
+		}
+		
+		function display()
+		{
+			revealAnswer.style.display = "block";
+			Title.style.display = "none";
+			
+			status = 1;
+		}
+        </script>
+		<link rel = "stylesheet" type = "text/css" href = "water.css">
+	</head>
+	<body onload = "init();">
+		<p>DATA</p>
+		<img id = "img" src = "ocean.jpg"/>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li class = "active"><a href = "data.html">Data Representation</a></li>
+            <li><a href = "places.html">Places in Need of Water</a></li>
+			<li><a href = "help.html">How You Can Help</a></li>
+			<li><a href = "funfact.html">Fun Facts about Water</a></li>
+			<li><a href = "contact.html">Contact</a></li>
+        </ul>
+		<p id = "Title">Can you guess how many people don't have access to clean water?</p>
+			<h2>Your guess is <span id = "yourguess">0</span> million people don't have access to water.</h2>
+		<button onclick = "addNum(0);">0</button>
+		<button onclick = "addNum(1);">1</button>
+		<button onclick = "addNum(2);">2</button>
+		<button onclick = "addNum(3);">3</button>
+		<button onclick = "addNum(4);">4</button>
+		<button onclick = "addNum(5);">5</button>
+		<button onclick = "addNum(6);">6</button>
+		<button onclick = "addNum(7);">7</button>
+		<button onclick = "addNum(8);">8</button>
+		<button onclick = "addNum(9);">9</button>
+		<button class = "buttons" onclick = "checkGuess();">Check your guess!</button><br />
+		<button class = "buttons" onclick = "display();">Give Up.</button><br />
+		<button class = "buttons" onclick = "addGuess(1);">Add 1 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(5);">Add 5 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(10);">Add 10 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(25);">Add 25 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(50);">Add 50 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(100);">Add 100 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(-1);">Subtract 1 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(-5);">Subtract 5 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(-10);">Subtract 10 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(-25);">Subtract 25 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(-50);">Subtract 50 Million.</button><br />
+		<button class = "buttons" onclick = "addGuess(-100);">Subtract 100 Million.</button><br />
+		<div id = "answer" class = "answertwo"> There are 844 million people in the world who have no access to clean water.
+		<br />
+		That is about every one in nine.
+		<br />
+		Every minute a newborn dies from infection caused by lack of safe water and an unclean environment.
+		<br />
+		Diarrhea caused by dirty water and poor toilets kills a child under 5 every 2 minutes.
+		<br />
+		</div>
+	
+</html>

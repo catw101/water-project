@@ -1,0 +1,144 @@
+#img {
+	position: fixed; 
+	top: 0px;
+	left: 0px;
+	width: 150%;
+	z-index: -1;
+	opacity: 0.35;
+}
+.active a {
+	color: black;
+	background-color: white;
+}
+p, h1 {
+	font-family: Garamond;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+h2 {
+	font-family: Garamond;
+	font-size: 35px;
+	text-align: center;
+}
+h3 {
+	font-family: Garamond;
+	text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+	background-color: #42d6b8;
+}
+li {
+	float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 9px 15px;
+    text-decoration: none;
+	font-family: Georgia;
+	border-style: solid;
+	border-color: black;
+	font-size: 100%;
+	font-weight: bold;
+}
+li a:hover {
+	color: black;
+	background-color: white;
+}
+.facts {
+	font-family: Georgia;
+	font-size: 20px;
+	width: 40%;
+	margin: 20px;
+	padding: 20px;
+	background-color: white;
+	display: inline-block;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5px;
+	position: relative;
+}
+#fact1 {
+	font-family: Georgia;
+	font-size: 50px;
+	width: 40%;
+	margin: auto;
+	padding: 30px;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5px;
+	position: relative;
+}
+#fact {
+	font-family: Garamond;
+	text-align: center;
+	padding: 3%;
+}
+.link {
+	font-family: Garamond;
+	text-align: center;
+	padding: 1%;
+}
+.link a {
+	text-decoration: none;
+	font-size: 300%;
+	color: black;
+}
+.link a:hover {
+	background-color: white;
+}
+.link a:visited {
+	color: black;
+}
+#you {
+	font-weight: bold;
+	font-style: italic;
+}
+.button {
+	font-family: Georgia;
+	background-color: white;
+	position: absolute;
+	left: 110%;
+	width: 100%;
+	font-size: 300%;
+	border-radius: 25px;
+}
+.button:hover {
+	cursor: pointer;
+}
+.westSahara:hover div, .libya:hover div, .Yemen:hover div, .Jordan:hover div{
+	display: inline;
+}
+li div {
+	display:none;
+}
+.hoverText{
+	font-family: Garamond;
+	font-size: 150%;
+}
+.buttons {
+	font-family: Garamond;
+	font-size: 100%;
+	margin: 10px;
+	font-weight: bold;
+}
+.answertwo {
+	font-family: Garamond;
+	font-size: 35px;
+	left: 20%;
+	position: absolute;
+	bottom: 20%;
+	color: INDIANRED;
+}
+#factButton {
+	font-family: Garamond;
+	background-color: white;
+	font-size: 300%;
+}

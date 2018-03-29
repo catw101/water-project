@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Fun Facts</title>
+		<script src = "utility file.js"></script>
+		<script>
+			function initialize() {
+				firstFact = document.getElementById("fact1");
+			}
+			function randomFacts() {
+				factNum = getRandomInteger(1,12);
+				if (factNum == 1)
+					firstFact.innerHTML = "Less than 1% of the water supply on earth can be used as drinking water.";
+				if (factNum == 2)
+					firstFact.innerHTML = "Up to 60% of the human adult body is water.";
+				if (factNum == 3)
+					firstFact.innerHTML = "Human bones are 31% water.";
+				if (factNum == 4)
+					firstFact.innerHTML = "At birth, water accounts for approximately 80 percent of an infant’s body weight.";
+				if (factNum == 5)
+					firstFact.innerHTML = "A person can live about a month without food, but only about a week without water.";
+				if (factNum == 6)
+					firstFact.innerHTML = "A small drip from a faucet can waste as much as 34 gallons or 128 liters of water a day.";
+				if (factNum == 7)
+					firstFact.innerHTML = "We lose over 2 quarts (64 oz) of water every day through the normal vapor exchange of our skin, otherwise known as perspiration.";
+				if (factNum == 8)
+					firstFact.innerHTML = "Most of the earth's surface water is permanently frozen or salty.";
+				if (factNum == 9)
+					firstFact.innerHTML = " The water from faucets could contain molecules that dinosaurs drank, since there is the same amount of water on Earth before and now.";
+				if (factNum == 10)
+					firstFact.innerHTML = "75% of a living tree is water.";
+				if (factNum == 11)
+					firstFact.innerHTML = "Water regulates the Earth's temperature.";
+				if (factNum == 12)
+					firstFact.innerHTML = "Water can expand by 9% when frozen.";
+			}
+		</script>
+		<link rel = "stylesheet" type = "text/css" href = "water.css">
+	</head>
+	<body onload = "initialize();">
+	<p>FUN FACTS ABOUT WATER</p>
+		<img id = "img" src = "ocean.jpg"/>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "data.html">Data Representation</a></li>
+            <li><a href = "places.html">Places in Need of Water</a></li>
+			<li><a href = "help.html">How You Can Help</a></li>
+			<li class = "active"><a href = "funfact.html">Fun Facts about Water</a></li>
+			<li><a href = "contact.html">Contact</a></li>
+        </ul>
+		<div id = "fact"><button id = "factButton" onclick = "randomFacts();">Get a random fact about water!</button></div>
+		<div id = "fact1"></div>
+	</body>
+</html>
